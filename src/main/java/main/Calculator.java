@@ -5,7 +5,7 @@ public class Calculator {
     public static void main(String[] args)
     {
         System.out.println("Enter first and second number:");
-        Scanner inp= new Scanner(System.in);
+        Scanner inp = new Scanner(System.in);
         int num1,num2;
         num1 = inp.nextInt();
         num2 = inp.nextInt();
@@ -13,18 +13,23 @@ public class Calculator {
         System.out.println("Enter your selection: 1 for Addition, 2 for substraction 3 for Multiplication and 4 for division:");
         int choose;
         choose = inp.nextInt();
-        switch (choose){
+        switch (choose)
+        {
         case 1:
-            System.out.println(add( num1,num2));
+        	ans = add( num1,num2);
+            System.out.println(ans);
             break;
         case 2:
-            System.out.println(sub( num1,num2));
+        	ans = sub( num1,num2);
+            System.out.println(ans);
             break;      
         case 3:
-            System.out.println(mult( num1,num2));
+        	ans = mult( num1,num2);
+            System.out.println(ans);
             break;
         case 4:
-            System.out.println(div( num1,num2));
+        	ans = div( num1,num2);
+            System.out.println(ans);
             break;
             default:
                 System.out.println("Illigal Operation");
@@ -38,26 +43,26 @@ public class Calculator {
     public static int add(int x, int y)
     {
     	int result=0;
-//        write your code here 
+result = x + y;//        write your code here 
     	
         return result;
     }
     public static int sub(int x, int y)
     {
     	int result=0;
-//        write your code here
+result = x - y;//        write your code here
         return result;
     }
     public static int mult(int x, int y)
     {
     	int result=0;
-//      write your code here        
+result = x * y;//      write your code here        
     	return result;
     }
     public static int div(int x, int y)
     {
     	int result=0;
-//      write your code here
+result = x / y;//      write your code here
     	return result;
     }
 
